@@ -47,17 +47,18 @@
 		            </ul>
 			      	<div class="tabs-container">
 				        <div class="tabs-content">
-				          	<form class="nc-login-form" method="" action="">
+				          	<form class="nc-login-form" method="post" action="{% url 'hangowang:login' %}" enctype="multipart/form-data">
+                                {% csrf_token %}
 					            <dl>
 				              		<dt>账&nbsp;&nbsp;&nbsp;号：</dt>
 				              		<dd>
-				                		<input class="text" placeholder="可使用已注册的用户名或手机号登录" type="text" id="username">
+				                		<input class="text" placeholder="可使用已注册的用户名或手机号登录" type="text" id="username" name="username">
 				              		</dd>
 					            </dl>
 				            	<dl>
 					              	<dt>密&nbsp;&nbsp;&nbsp;码：</dt>
 					              	<dd>
-					                	<input class="text" placeholder="6-20个大小写英文字母、符号或数字" type="text" id="pad">
+					                	<input class="text" placeholder="6-20个大小写英文字母、符号或数字" type="text" id="pad" name="password">
 					              	</dd>
 					            </dl>
 			                    <div class="handle-div">
@@ -68,7 +69,7 @@
 						            <a class="forget" href="#">忘记密码？</a>
 			                    </div>
 					            <div class="submit-div">
-				              		<input class="submit" value="登&nbsp;&nbsp;&nbsp;录" type="button" id="loginsub">
+				              		<input class="submit" value="登&nbsp;&nbsp;&nbsp;录" type="submit" id="loginsub">
 				            	</div>
 				          	</form>
 				        </div>
@@ -94,7 +95,7 @@
 						</div>
 						<div class="fl about-us">
 							<p>
-								<a href="#">返回首页</a><span>|</span> 
+								<a href="{% url 'hangowang:index' %}">返回首页</a><span>|</span>
 								<a href="#">商家入驻</a><span>|</span> 
 								<a href="#">联系我们</a><span>|</span> 
 								<a href="#">关于汉购网</a><span>|</span> 

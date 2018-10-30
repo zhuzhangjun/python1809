@@ -20,7 +20,7 @@
 				<div class="user-entry">
 					<!--登录后的-->
 					<div id="user-info" style="display: none;">
-						您好 <span> <a href="#" id="top-username"></a></span>  <!--显示用户名   个人中心-->
+						您好 <span> <a href="#" id="top-username">{{ username }}</a></span>  <!--显示用户名   个人中心-->
 						，欢迎来到 <a href="#" title="首页" alt="首页"><span>汉购网</span></a> <span>[<a href="../html/index.html">退出</a>]</span>
 					</div>
 					<!--登录前的-->
@@ -404,7 +404,7 @@
 				<!--购物车-->
 				<div class="ever" id="indexadd">
 					<div class="cart">
-						<a href="cart.html" >
+						<a href="{% url 'hangowang:cart' %}" >
 							<span class="icon" id="end"></span> 
 							<span>购物车</span>
 						</a>

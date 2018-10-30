@@ -9,4 +9,5 @@ urlpatterns = [
     url(r'^register/$',views.register,name='register'),  # 注册
     url(r'^details/$',views.details,name='details'),  # 商品详情页面
     url(r'^cart/$',views.cart,name='cart'),  # 购物车页面
+    url(r'^logout/$',views.logout,name='logout'),  # 退出登录
 ]

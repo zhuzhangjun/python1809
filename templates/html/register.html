@@ -42,30 +42,30 @@
 		          			<div class="tabs-container">
 		          				<!--账号注册-->
 		            			<div class="tabs-content show">
-	              					<form class="nc-login-form" id="tabs-pc">
-	              						
+	              					<form class="nc-login-form" id="tabs-pc" action="{% url 'hangowang:register' %} "method="post" enctype="multipart/form-data">
+	              						{% csrf_token %}
 	                					<dl>
 						                    <dt>用户名：</dt>
 						                  	<dd>
-						                    	<input class="text" placeholder="请使用3-15个中、英文、数字及“-”符号" type="text" id="username">
+						                    	<input class="text" placeholder="请使用3-15个中、英文、数字及“-”符号" type="text" id="username" name="username">
 						                 	 </dd>
 						                </dl>
 						                <dl>
 						                  	<dt>设置密码：</dt>
 							                <dd>
-						                    	<input class="text" placeholder="6-20个大小写英文字母、符号或数字" type="text" id="pad">
+						                    	<input class="text" placeholder="6-20个大小写英文字母、符号或数字" type="password" id="pad" name="password">
 							                </dd>
 						                </dl>
 						                <dl>
 						                  	<dt>确认密码：</dt>
 						                  	<dd>
-						                    	<input class="text" placeholder="请再次输入密码" type="text" id="confirmpas">
+						                    	<input class="text" placeholder="请再次输入密码" type="password" id="confirmpas">
 						                  </dd>
 						                </dl>
 						                <dl>
 						                  	<dt>邮箱：</dt>
 						                  	<dd>
-						                    	<input class="text" placeholder="输入常用邮箱作为验证及找回密码使用"  type="text" id="mailbox">
+						                    	<input class="text" placeholder="输入常用邮箱作为验证及找回密码使用"  type="text" id="mailbox" name="addr">
 						                 	 </dd>
 						                </dl>
 						                <div class="code-div">
@@ -86,7 +86,7 @@
 							                </dd>
 						                </dl>
 						                <div class="submit-div">
-						                	<input type="button" value="立即注册" id="submit" class="submit"/>
+						                	<input type="submit" value="立即注册" id="submit" class="submit"/>
 						                </div>
 					              	</form>
 					            </div>
