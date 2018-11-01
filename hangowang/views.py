@@ -6,20 +6,22 @@ from django.shortcuts import render, redirect
 
 # Create your views here.
 # 首页
-from hangowang.models import Lunbotu, User
+from hangowang.models import Lunbotu, User, Daydown, Gitpush
 
 
 def index(request):
     token = request.COOKIES.get('token')
-    print(521)
-    print(token)
     users = User.objects.filter(token=token)
-    print(users)
+    lunbotu_list = Lunbotu.objects.all()
+    w390 = Daydown.objects.all()[0:2]
+    w480 = Daydown.objects.all()[2:6]
+    w320 = Daydown.objects.all()[6:8]
+    gitpush = Gitpush.objects.all()
     if users.exists():
         user = users.first()
-        return render(request,'html/index.html',context={'user':user,'token':token})
+        return render(request,'html/index.html',context={'user':user,'token':token,'lunbotu_list':lunbotu_list,'w390':w390,'w480':w480,'w320':w320,'gitpush':gitpush},)
     else:
-        return render(request,'html/index.html')
+        return render(request,'html/index.html',context={'lunbotu_list':lunbotu_list,'w390':w390,'w480':w480,'w320':w320,'gitpush':gitpush})
 # 登陆页面
 def login(request):
     if request.method == 'GET':

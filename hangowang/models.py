@@ -5,9 +5,10 @@ from django.db import models
 # 轮播图　模型类
 class Lunbotu(models.Model):
     id = models.IntegerField(primary_key=True)
-    imgsrc = models.CharField(max_length=30)
+    src = models.CharField(max_length=30)
     class Meta:
         db_table = 'Lunbotu'
+# 用户模型类
 class User(models.Model):
     username = models.CharField(max_length=50)
     password = models.CharField(max_length=20)
@@ -15,3 +16,13 @@ class User(models.Model):
     token = models.CharField(max_length=100)
     class Meta:
         db_table = 'User'
+# 今日优惠模型类
+class Daydown(models.Model):
+    imgsrc = models.CharField(max_length=20)
+    class Meta:
+        db_table = 'daydown'
+# 推荐模型类
+class Gitpush(models.Model):
+    imgsrc = models.CharField(max_length=30)
+    class Meta:
+        db_table = 'gitpush'

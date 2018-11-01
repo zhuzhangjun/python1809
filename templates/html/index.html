@@ -19,16 +19,19 @@
 				<!--顶部标题左侧-->
 				<div class="user-entry">
 					<!--登录后的-->
-					<div id="user-info" style="display: none;">
-						您好 <span> <a href="#" id="top-username">{{ username }}</a></span>  <!--显示用户名   个人中心-->
-						，欢迎来到 <a href="#" title="首页" alt="首页"><span>汉购网</span></a> <span>[<a href="../html/index.html">退出</a>]</span>
+                    {% if token %}
+					<div id="user-info">
+						您好 <span> <a href="#" id="top-username">{{ user.username }}</a></span>  <!--显示用户名   个人中心-->
+						，欢迎来到 <a href="#" title="首页" alt="首页"><span>汉购网</span></a> <span>[<a href="{% url 'hangowang:logout' %}">退出</a>]</span>
 					</div>
 					<!--登录前的-->
+                    {% else %}
 					<div id="user-login">
 						您好，欢迎来到	<a href="#" title="首页" alt="首页">汉购网</a>
 						<span class="login-link"><a href="{% url 'hangowang:login' %}">请登录</a></span>
 						<span class="login-link"><a href="{% url 'hangowang:register'%}">立即注册</a></span>
 					</div>
+                    {% endif %}
 				</div>
 				<!--顶部标题右侧-->
 				<div class="quick-menu">
@@ -368,17 +371,12 @@
 			<ul class="full-screen-slides" id="full-screen-slides">
                  {% for lunbotu in lunbotu_list %}
                      <li>
-                         <img src="{{ lunbotu.imgsrc }}" alt="">
+                         <img src="{{ lunbotu.src }}" alt="">
                      </li>
                  {% endfor %}
-				<!--<li><img src="../images/web-101-101-1.jpg"></li>
-				<li><img src="../images/web-101-101-2.jpg"></li>
-				<li><img src="../images/web-101-101-3.jpg"></li>
-				<li><img src="../images/web-101-101-4.jpg"></li>
-				<li><img src="../images/web-101-101-5.jpg"></li>-->
 			</ul>
 			<ul class="full-screen-slides-pagination" id="full-screen-slides-pagination">
-				<li class="full-screen-active"></li>
+                <li class="full-screen-active"></li>
 				<li></li>
 				<li></li>
 				<li></li>
@@ -442,33 +440,38 @@
 				<div class="RealBargains mt30">
 		            <div class="clearfix" id="RealBargains">
 		                <div class="w390">
-	                        <!--<a href="#"><img src="../images/05590672125777349.jpg"></a>
-	                        <a href="#"><img src="../images/05590673108846204.jpg"> </a>-->
+                            {% for item in w390 %}
+                                <a href="#">
+                                    <img src="{{ item.imgsrc }}" alt="">
+                                </a>
+                            {% endfor %}
 		                </div>
 		                <div class="w480">
-		                	<!--<a href="#"><img src="../images/05590674169656069.jpg"></a>
-	                        <a href="#"><img src="../images/05590675421568672.jpg"></a>
-	                        <a href="#"><img src="../images/05590674965245453.jpg"></a>
-	                        <a href="#"><img src="../images/05590675984668682.jpg"></a>-->
+                            {% for item1 in w480 %}
+                                <a href="#">
+                                    <img src="{{ item1.imgsrc }}" alt="">
+                                </a>
+                            {% endfor %}
 		                </div>
 		                <div class="w320">
-		                     <!--<a href="#"><img src="../images/05590676500880166.jpg"></a>
-	                         <a href="#"><img src="../images/05590676855954505.jpg"></a>-->
+                            {% for item2 in w320 %}
+                                <a href="#">
+                                    <img src="{{ item2.imgsrc }}" alt="">
+                                </a>
+                            {% endfor %}
 		                </div>
 		            </div>
 		        </div>
 		        <!-------------------////////22222推荐222222///////////----------------->
 	            <div class="dailyRecommendation mt30">
 					<ul class="clearfix" id="recommend-list">
-					    <!--<li>
-							<a href="#"> <img src="../images/web-615-629-2.jpg"></a>
-						</li>
-						<li>
-							<a href="#"><img src="../images/web-615-629-1.jpg"></a>
-						</li>
-						<li>
-							<a href="#"> <img src="../images/web-615-629-3.jpg"></a>
-						</li>-->
+                        {% for item3 in gitpush %}
+                            <li>
+                                <a href="#">
+                                    <img src="{{ item3.imgsrc  }}" alt="">
+                                </a>
+                            </li>
+                        {% endfor %}
 					</ul>
     			</div>
     			<!-------------------///////////333333特产3333333/////////----------------->
