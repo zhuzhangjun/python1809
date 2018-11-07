@@ -6,7 +6,7 @@ from django.shortcuts import render, redirect
 
 # Create your views here.
 # 首页
-from hangowang.models import Lunbotu, User, Daydown, Gitpush
+from hangowang.models import Lunbotu, User, Daydown, Gitpush, Goodlists
 
 
 def index(request):
@@ -17,11 +17,27 @@ def index(request):
     w480 = Daydown.objects.all()[2:6]
     w320 = Daydown.objects.all()[6:8]
     gitpush = Gitpush.objects.all()
+    right_side = Goodlists.objects.first()
+    productList4_head = Goodlists.objects.all()[1:3]
+    center_side = Goodlists.objects.all()[3:4]
+    productList4_foot = Goodlists.objects.all()[4:10]
+    data = {
+        'lunbotu_list': lunbotu_list,
+        'w390': w390, 'w480': w480,
+        'w320': w320,
+        'gitpush': gitpush,
+        'right_side': right_side,
+        'productList4_head': productList4_head,
+        'center_side': center_side,
+        'productList4_foot': productList4_foot,
+    }
     if users.exists():
         user = users.first()
-        return render(request,'html/index.html',context={'user':user,'token':token,'lunbotu_list':lunbotu_list,'w390':w390,'w480':w480,'w320':w320,'gitpush':gitpush},)
+        data['user'] = user
+        data['token'] = token
+        return render(request,'html/index.html',context=data)
     else:
-        return render(request,'html/index.html',context={'lunbotu_list':lunbotu_list,'w390':w390,'w480':w480,'w320':w320,'gitpush':gitpush})
+        return render(request,'html/index.html',context=data)
 # 登陆页面
 def login(request):
     if request.method == 'GET':

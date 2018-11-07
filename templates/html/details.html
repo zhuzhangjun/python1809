@@ -1,14 +1,15 @@
+{% load static %}
 <!DOCTYPE html>
 <html>
 	<head>
 		<meta charset="UTF-8">
 		<title>汉购网-详情</title>
-		<link rel="stylesheet" type="text/css" href="../css/reset.css">
-		<link rel="stylesheet" type="text/css" href="../css/base.css">
-		<link rel="stylesheet" type="text/css" href="../css/details.css">
-		<script type="text/javascript" src="../js/jquery-1.12.3.js"></script>
-		<script type="text/javascript" src="../js/jquery.cookie.js"></script>
-		<script type="text/javascript" src="../js/details.js"></script>
+		<link rel="stylesheet" type="text/css" href="{% static 'css/reset.css' %}">
+		<link rel="stylesheet" type="text/css" href="{% static 'css/base.css' %}">
+		<link rel="stylesheet" type="text/css" href="{% static 'css/details.css' %}">
+		<script type="text/javascript" src="{% static 'js/jquery-1.12.3.js' %}"></script>
+		<script type="text/javascript" src="{% static 'js/jquery.cookie.js' %}"></script>
+		<script type="text/javascript" src="{% static 'js/details.js' %}"></script>
 	</head>
 	<body>
 		<!--顶部-->
@@ -62,7 +63,7 @@
 						<dt>关注我们<i></i></dt>
 						<dd>
 							<h4>扫描二维码<br/>关注商城微信号</h4>
-							<img src="../images/WeChatQR code.png"> 
+							<img src="{% static 'images/WeChatQR code.png' %}">
 						</dd>
 					</dl>
 				</div> 
@@ -74,12 +75,12 @@
 		<div class="header-wrap">
 		  <header class="public-head-layout wrapper">
 		    <h1 class="site-logo">
-		    	<a href="#"><img src="../images/logo.jpg"></a>
+		    	<a href="#"><img src="{% static 'images/logo.jpg' %}"></a>
 		    </h1>
 		    <div class="head-search-layout">
 		    	<!--搜索框-->
 		    	<div class="head-search-bar" id="head-search-bar">
-			        <form action="" method="" class="search-form" id="top_search_form">
+			        <form action="" method="post" class="search-form" id="top_search_form">
 			          <input type="text" class="input-text" placeholder="农谷鲜"/>
 			          <input type="submit"  value="" class="input-submit" />
 			        </form>
@@ -123,6 +124,7 @@
 					<li>优质配送</li>
 				</ul>
 			</div>
+          </header>
 		</div>
 		
 		<!--顶部导航-->
@@ -139,7 +141,7 @@
 		    			<ul class="menu">
 	                        <li>
 			                    <div class="class">
-			                        <span class="ico"><img src="../images/category1.png" width="16" height="16"></span>
+			                        <span class="ico"><img src="{% static 'images/category1.png' %}" width="16" height="16"></span>
 			                        <h4><a href="#">生鲜水果</a></h4>
 			                    </div>
 			                    <div class="sub-class">
@@ -195,7 +197,7 @@
 	                		</li>
 		                    <li>
 		                    	<div class="class">
-		                            <span class="ico"><img src="../images/category2.png" width="16" height="16"></span>
+		                            <span class="ico"><img src="{% static 'images/category2.png' %}" width="16" height="16"></span>
 		                            <h4><a href="#">蛋奶速食</a></h4>
 		                    	</div>
 		                        <div class="sub-class">
@@ -224,7 +226,7 @@
 		                	</li>
 		                    <li>
 		                    	<div class="class">
-		                            <span class="ico"><img src="../images/category3.png" width="16" height="16"></span>
+		                            <span class="ico"><img src="{% static 'images/category3.png' %}" width="16" height="16"></span>
 		                            <h4><a href="#">休闲零食</a></h4>
 		                    	</div>
 		                        <div class="sub-class">
@@ -259,7 +261,7 @@
 			                </li>
 			                <li>
 			                    <div class="class">
-			                        <span class="ico"><img src="../images/category4.png" width="16" height="16"></span>
+			                        <span class="ico"><img src="{% static 'images/category4.png' %}" width="16" height="16"></span>
 			                        <h4><a href="#">粮油杂货</a></h4>
 			                    </div>
 			                    <div class="sub-class">
@@ -314,7 +316,7 @@
 			                </li>
 			                <li>
 			                    <div class="class">
-	                                <span class="ico"><img src="../images/category5.png" width="16" height="16"></span>
+	                                <span class="ico"><img src="{% static 'images/category5.png' %}" width="16" height="16"></span>
 	                                <h4><a href="#">酒水饮品</a></h4>
 			                    </div>
 			                    <div class="sub-class">
@@ -423,7 +425,7 @@
 		                    <dd><span></span><a href="#">共有<em id="evaluate"></em>条评价</a></dd>
 		                </dl>
 	                    <div class="ncs-goods-code">
-	                  		<p><img src="../images/clientQR.png"></p>
+	                  		<p><img src="{% static 'images/clientQR.png' %}"></p>
 	                  		<span><i></i>客户端扫购有惊喜</span>
 	                    </div>
 	          		</div>
@@ -602,7 +604,7 @@
 								<!--我的账户-->
 								<a href="#">
 									<div class="avatar">
-										<img src="../images/default_user_portrait.gif">
+										<img src="{% static 'images/default_user_portrait.gif' %}">
 									</div>
 									<span class="tit">我的账户</span>
 								</a>
@@ -611,7 +613,7 @@
 							<div class="user-info" style="display:none;">
 								<i class="arrow"></i>
 								<div class="avatar">
-									<img src="../images/default_user_portrait.gif">
+									<img src="{% static 'images/default_user_portrait.gif' %}">
 									<div class="frame"></div>
 								</div>
 								<dl>
@@ -634,7 +636,7 @@
 					<div class="l_qrcode">
 						<a href="#">
 							<span class="icon"></span>
-							<code><img src="../images/WeChatQR code.png"></code>
+							<code><img src="{% static 'images/WeChatQR code.png' %}"></code>
 						</a>
 					</div>
 					<!--退回顶部-->
@@ -657,7 +659,7 @@
 		            <li>
 			            <dl>
 			            	<dt class="goods-pic">
-			              		<a href="#"><img src="../images/lweb-2.jpg"></a>
+			              		<a href="#"><img src="{% static 'images/lweb-2.jpg' %}"></a>
 			              	</dt>
 			              	<dd class="goods-name">
 			              		<a href="#">豆丝豆折豆粑豆皮湖北特产黄豆豆丝柴火灶做无添加手工豆丝1kg装</a>
@@ -668,7 +670,7 @@
 		          	<li>
 			            <dl>
 			            	<dt class="goods-pic">
-			              		<a href="#"><img src="../images/lweb-2.jpg"></a>
+			              		<a href="#"><img src="{% static 'images/lweb-2.jpg' %}"></a>
 			               </dt>
 			               <dd class="goods-name">
 			              		<a href="#">豆丝豆折豆粑豆皮湖北特产黄豆豆丝柴火灶做无添加手工豆丝1kg装</a>
@@ -692,14 +694,14 @@
 			        	<ul>
 				          	<li>
 				            	<dl>
-				            		<dt class="goods-pic"><a href="#"><img src="../images/lweb-2.jpg"></a></dt>
+				            		<dt class="goods-pic"><a href="#"><img src="{% static 'images/lweb-2.jpg' %}"></a></dt>
 					              	<dd class="goods-name"><a href="#">湖北沙洋特产特级无公害再生稻生态大米 高营养米10斤装包邮</a></dd>
 					              	<dd class="goods-price">¥56.90</dd>
 				            	</dl>
 			          		</li>
 			          		<li>
 				            	<dl>
-					              	<dt class="goods-pic"><a href="#"><img src="../images/lweb-2.jpg"></a></dt>
+					              	<dt class="goods-pic"><a href="#"><img src="{% static 'images/lweb-2.jpg' %}"></a></dt>
 					              	<dd class="goods-name"><a href="#">湖北沙洋特产特级无公害再生稻生态大米 高营养米10斤装包邮</a></dd>
 					              	<dd class="goods-price">¥56.90</dd>
 				            	</dl>
@@ -725,7 +727,7 @@
 			                <li>
 					          	<dl>
 					          		<dt class="panel-pic">
-						            	<a href="#"><img src="../images/lweb-1.jpg"></a>
+						            	<a href="#"><img src="{% static 'images/lweb-1.jpg' %}"></a>
 								 	</dt>
 						            <dd>
 						            	<p class="panel-name"><a href="#">PDD 特产稻香长粒大米10斤 非转基因长粒大米 香糯清甜</a></p>
@@ -742,7 +744,7 @@
 		                	<li>
 		          				<dl>
 					          		<dt class="panel-pic">
-						            	<a href="#"><img src="../images/lweb-1.jpg"></a>
+						            	<a href="#"><img src="{% static 'images/lweb-1.jpg' %}"></a>
 								 	</dt>
 						            <dd>
 						            	<p class="panel-name"><a href="#">PDD 特产稻香长粒大米10斤 非转基因长粒大米 香糯清甜</a></p>
@@ -754,7 +756,7 @@
 					        <li>
 		          				<dl>
 					          		<dt class="panel-pic">
-						            	<a href="#"><img src="../images/lweb-1.jpg"></a>
+						            	<a href="#"><img src="{% static 'images/lweb-1.jpg' %}"></a>
 								 	</dt>
 						            <dd>
 						            	<p class="panel-name"><a href="#">PDD 特产稻香长粒大米10斤 非转基因长粒大米 香糯清甜</a></p>
@@ -777,7 +779,7 @@
 			                	<li>
 			          				<dl>
 						          		<dt class="panel-pic">
-							            	<a href="#"><img src="../images/lweb-1.jpg"></a>
+							            	<a href="#"><img src="{% static 'images/lweb-1.jpg' %}"></a>
 									 	</dt>
 							            <dd>
 							            	<p class="panel-name"><a href="#">PDD 特产稻香长粒大米10斤 非转基因长粒大米 香糯清甜</a></p>
@@ -788,7 +790,7 @@
 						        <li>
 			          				<dl>
 						          		<dt class="panel-pic">
-							            	<a href="#"><img src="../images/lweb-1.jpg"></a>
+							            	<a href="#"><img src="{% static 'images/lweb-1.jpg' %}"></a>
 									 	</dt>
 							            <dd>
 							            	<p class="panel-name"><a href="#">PDD 特产稻香长粒大米10斤 非转基因长粒大米 香糯清甜</a></p>
@@ -880,7 +882,7 @@
 				          		<span>您可对已购商品进行评价</span>
 				            	<p>
 				            		<a href="#" class="ncbtn-grapefruit" >
-					            		<img src="../images/pinglun.png" />
+					            		<img src="{% static 'images/pinglun.png' %}" />
 					            		评价商品
 				            		</a>
 				            	</p>
@@ -1004,10 +1006,10 @@
 		        </div>
 		    </div>
 			<div class="footer-fp-img">
-				<a href="#"><img src="../images/sm_83x30.png"/></a>
-				<a href="#"><img src="../images/gangting.gif"/></a>
-				<a href="#"><img src="../images/beian.jpg"/></a>
-				<a href="#"><img src="../images/gongshang-icon.png"/></a>
+				<a href="#"><img src="{% static 'images/sm_83x30.png' %}"/></a>
+				<a href="#"><img src="{% static 'images/gangting.gif' %}"/></a>
+				<a href="#"><img src="{% static 'images/beian.jpg' %}"/></a>
+				<a href="#"><img src="{% static 'images/gongshang-icon.png' %}"/></a>
 			</div>
 		</footer>
 	</body>

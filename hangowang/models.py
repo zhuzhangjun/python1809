@@ -26,3 +26,11 @@ class Gitpush(models.Model):
     imgsrc = models.CharField(max_length=30)
     class Meta:
         db_table = 'gitpush'
+# 粮油杂货模型类
+class Goodlists(models.Model):
+    img = models.CharField(max_length=30)
+    goodsname = models.CharField(max_length=100)
+    price = models.FloatField()
+    oldprice = models.FloatField()
+    class Meta:
+        db_table = 'Goodlists'
