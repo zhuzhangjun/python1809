@@ -374,7 +374,7 @@
 					<!--中图-->
 			    	<div class="gallery_wrap">
 				        <div class="smallImg">
-				        	<img src="" >
+				        	<img src=" " >
 				        	<div class="smallArea"></div>	
 				        </div>
 				    </div>
@@ -382,10 +382,10 @@
 			        <div class="controller_wrap">
 				        <div class="controller">
 				           <ul id="smllList">
-				           		<li class="current-controller"><img src="" data-msrc= "" data-bsrc = "" ></li>
-				           		<li><img src=""  data-msrc= ""  data-bsrc = "" ></li>
-				           		<li><img src=""  data-msrc= ""  data-bsrc = "" ></li>
-				           		<li><img src=""  data-msrc= ""  data-bsrc = "" ></li>
+				           		<li class="current-controller"><img src="{{ detail_info.bi }}" data-msrc= "{{ detail_info.bigimg1 }}" data-bsrc = "{{ detail_info.middleimg1 }}" ></li>
+				           		<li><img src="{{ detail_info.bigimg2 }}"  data-msrc= "{{ detail_info.bigimg2 }}"  data-bsrc = "{{ detail_info.middleimg2 }}" ></li>
+				           		<li><img src="{{ detail_info.bigimg3 }}"  data-msrc= "{{ detail_info.bigimg3 }}"  data-bsrc = "{{ detail_info.middleimg3 }}" ></li>
+				           		<li><img src="{{ detail_info.bigimg4 }}"  data-msrc= "{{ detail_info.bigimg4 }}"  data-bsrc = "{{ detail_info.middleimg4 }}" ></li>
 			               </ul>
 				        </div>
 		        	</div>
@@ -403,26 +403,26 @@
 				<!--焦点图上中-->
 			    <div class="ncs-goods-summary">
 			        <div class="name" id="titlname">
-			            <h1 id="detailstitle"></h1>
-			            <strong></strong>
+			            <h1 id="detailstitle">{{ detail_info.title }}</h1>
+			            <strong>{{ detail_info.hint }}</strong>
 			        </div>
 			        <!--价格-->
 	           		<div class="ncs-meta">
 		                <dl>
 			                <dt>市&nbsp;&nbsp;场&nbsp;&nbsp;价：</dt>
 			                <dd class="cost-price">
-			                    <strong><em id="unit"></em><span id="original"></span></strong>
+			                    <strong><em id="unit">{{ detail_info.unit }}</em><span id="original">{{ detail_info.original }}</span></strong>
 			                </dd>
 		                </dl>
 			            <dl>
 			                <dt>商&nbsp;&nbsp;城&nbsp;&nbsp;价：</dt>
 			                <dd class="price">
-			                   <strong><em id="punit"></em><span id="price"></span></strong>
+			                   <strong><em id="punit">{{ detail_info.unit }}</em><span id="price">{{ detail_info.price }}</span></strong>
 			                </dd>
 			            </dl>
 		                <dl class="rate">
 		                    <dt>商品评分：</dt>
-		                    <dd><span></span><a href="#">共有<em id="evaluate"></em>条评价</a></dd>
+		                    <dd><span></span><a href="#">共有<em id="evaluate">{{ detail_info.evaluate }}</em>条评价</a></dd>
 		                </dl>
 	                    <div class="ncs-goods-code">
 	                  		<p><img src="{% static 'images/clientQR.png' %}"></p>
@@ -842,14 +842,14 @@
 				          	<li>品牌：农谷鲜</li>                            
 	                	</ul>
 	                	<div class="ncs-goods-img-content">
-                    		<img src="">
-                    		<img src="">
-                    		<img src="">
-                    		<img src="">
-                    		<img src="">	
-                    		<img src="">	
-                    		<img src="">
-                			<img src="">
+                    		<img src="{{ detail_info.dtbgimg1 }}">
+                    		<img src="{{ detail_info.dtbgimg2 }}">
+                    		<img src="{{ detail_info.dtbgimg3 }}">
+                    		<img src="{{ detail_info.dtbgimg4 }}">
+                    		<img src="{{ detail_info.dtbgimg5 }}">
+                    		<img src="{{ detail_info.dtbgimg6 }}">
+                    		<img src="{{ detail_info.dtbgimg7 }}">
+                			<img src="{{ detail_info.dtbgimg8 }}">
 	                  	</div>
 	      			</div>
 	    		</div>

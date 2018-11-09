@@ -6,7 +6,7 @@ from django.shortcuts import render, redirect
 
 # Create your views here.
 # 首页
-from hangowang.models import Lunbotu, User, Daydown, Gitpush, Goodlists
+from hangowang.models import Lunbotu, User, Daydown, Gitpush, Goodlists, DaydownDetail
 
 
 def index(request):
@@ -90,8 +90,11 @@ def logout(request):
     response.delete_cookie('token')
     return response
 # 商品详情页
-def details(request):
-    return render(request,'html/details.html')
+def details(request,detail):
+    daydown = Daydown.objects.get(pk=detail)
+    detail_info = daydown.daydowndetail
+
+    return render(request,'html/details.html',context={'detail_info':detail_info})
 
 # 购物车
 def cart(request):

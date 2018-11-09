@@ -441,21 +441,21 @@
 		            <div class="clearfix" id="RealBargains">
 		                <div class="w390">
                             {% for item in w390 %}
-                                <a href="{% url 'hangowang:details' %}">
+                                <a href="{% url 'hangowang:details' item.id %}">
                                     <img src="{{ item.imgsrc }}" alt="">
                                 </a>
                             {% endfor %}
 		                </div>
 		                <div class="w480">
                             {% for item1 in w480 %}
-                                <a href="{% url 'hangowang:details' %}">
+                                <a href="{% url 'hangowang:details' item1.id %}">
                                     <img src="{{ item1.imgsrc }}" alt="">
                                 </a>
                             {% endfor %}
 		                </div>
 		                <div class="w320">
                             {% for item2 in w320 %}
-                                <a href="{% url 'hangowang:details' %}">
+                                <a href="{% url 'hangowang:details' item2.id %}">
                                     <img src="{{ item2.imgsrc }}" alt="">
                                 </a>
                             {% endfor %}
@@ -468,7 +468,7 @@
                         {% for item3 in gitpush %}
                             <li>
                                 <a href="#">
-                                    <img src="{{ item3.imgsrc  }}" alt="">
+                                    <img src="{{ item3.imgsrc }}" alt="">
                                 </a>
                             </li>
                         {% endfor %}
