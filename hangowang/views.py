@@ -90,12 +90,22 @@ def logout(request):
     response.delete_cookie('token')
     return response
 # 商品详情页
-def details(request,detail):
-    daydown = Daydown.objects.get(pk=detail)
-    detail_info = daydown.daydowndetail
-
-    return render(request,'html/details.html',context={'detail_info':detail_info})
-
+def details(request, detail):
+    try:
+        token = request.COOKIES.get('token')
+        user = User.objects.get(token=token)
+        daydown = Daydown.objects.get(pk=detail)
+        detail_info = daydown.daydowndetail
+        responseData = {
+            'token': token,
+            'user': user,
+            'detail_info': detail_info,
+        }
+        return render(request, 'html/details.html', context=responseData)
+    except:
+        daydown = Daydown.objects.get(pk=detail)
+        detail_info = daydown.daydowndetail
+        return render(request, 'html/details.html', context={'detail_info':detail_info})
 # 购物车
 def cart(request):
     return render(request,'html/cart.html')

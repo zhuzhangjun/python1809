@@ -14,22 +14,26 @@
 	<body>
 		<!--顶部-->
 		<div class="public-top-layout w">
-			<div class="topbar wrapper"> 
+			<div class="topbar wrapper">
 				<!--顶部标题左侧-->
 				<div class="user-entry">
 					<!--登录后的-->
-					<div id="user-info" style="display: none;">
-						您好 <span> <a href="#" id="top-username"></a></span>  <!--显示用户名   个人中心-->
-						，欢迎来到 <a href="#" title="首页" alt="首页"><span>汉购网</span></a> <span>[<a href="#">退出</a>]</span>
+					 {% if token %}
+					<div id="user-info">
+						您好 <span> <a href="#" id="top-username">{{ user.username }}</a></span>  <!--显示用户名   个人中心-->
+						，欢迎来到 <a href="#" title="首页" alt="首页"><span>汉购网</span></a> <span>[<a href="{% url 'hangowang:logout' %}">退出</a>]</span>
 					</div>
 					<!--登录前的-->
+                    {% else %}
 					<div id="user-login">
 						您好，欢迎来到	<a href="#" title="首页" alt="首页">汉购网</a>
-						<span class="login-link"><a href="login.html">请登录</a></span> 
-						<span class="login-link"><a href="register.html">立即注册</a></span>
+						<span class="login-link"><a href="{% url 'hangowang:login' %}">请登录</a></span>
+						<span class="login-link"><a href="{% url 'hangowang:register'%}">立即注册</a></span>
 					</div>
+                    {% endif %}
 				</div>
-				
+				</div>
+
 				<!--顶部标题右侧-->
 				<div class="quick-menu">
 					<dl>
@@ -66,10 +70,10 @@
 							<img src="{% static 'images/WeChatQR code.png' %}">
 						</dd>
 					</dl>
-				</div> 
+				</div>
 			</div>
 		</div>
-		
+
 		<!-- PublicHeadLayout Begin -->
 		<!--头部-->
 		<div class="header-wrap">
@@ -117,7 +121,7 @@
 	                </ul>
 		        </div>
 		    </div>
-			<div class="advantage">  
+			<div class="advantage">
 				<ul>
 					<li>100%正品  真品真实惠</li>
 					<li>产地直供  原汁原味</li>
@@ -126,7 +130,7 @@
 			</div>
           </header>
 		</div>
-		
+
 		<!--顶部导航-->
 		<nav class="public-nav-layout ">
 			<div class="wrapper">
@@ -349,7 +353,7 @@
 				</div>
 				<!--头部右导航-->
 			    <ul class="site-menu">
-			        <li><a href="index.html" class="current"><span>首页</span></a></li>
+			        <li><a href="{% url 'hangowang:index' %}" class="current"><span>首页</span></a></li>
 			        <li><a href="#">土道家</a></li>
 			        <li><a href="#"> 森林特产</a></li>
 			        <li><a href="#">农谷鲜</a></li>
@@ -358,11 +362,11 @@
 			    </ul>
 				<div class="con-cart">
 				    <a href="#" class="cart-btn">
-			            <i class="cart-icon"></i> 
+			            <i class="cart-icon"></i>
 						<em class="cart-num">0</em>
 						<span>购物车</span>
 					</a>
-				</div> 
+				</div>
 		    </div>
 		</nav>
 		<!------------------------------焦点图 ------------------------------------>
@@ -374,18 +378,18 @@
 					<!--中图-->
 			    	<div class="gallery_wrap">
 				        <div class="smallImg">
-				        	<img src=" " >
-				        	<div class="smallArea"></div>	
+				        	<img src="{{ detail_info.bigimg1 }}" >
+				        	<div class="smallArea"></div>
 				        </div>
 				    </div>
 		            <!--小图-->
 			        <div class="controller_wrap">
 				        <div class="controller">
 				           <ul id="smllList">
-				           		<li class="current-controller"><img src="{{ detail_info.bi }}" data-msrc= "{{ detail_info.bigimg1 }}" data-bsrc = "{{ detail_info.middleimg1 }}" ></li>
-				           		<li><img src="{{ detail_info.bigimg2 }}"  data-msrc= "{{ detail_info.bigimg2 }}"  data-bsrc = "{{ detail_info.middleimg2 }}" ></li>
-				           		<li><img src="{{ detail_info.bigimg3 }}"  data-msrc= "{{ detail_info.bigimg3 }}"  data-bsrc = "{{ detail_info.middleimg3 }}" ></li>
-				           		<li><img src="{{ detail_info.bigimg4 }}"  data-msrc= "{{ detail_info.bigimg4 }}"  data-bsrc = "{{ detail_info.middleimg4 }}" ></li>
+				           		<li class="current-controller"><img src="{{ detail_info.smallimg1 }}" data-msrc= "{{ detail_info.middleimg1 }}" data-bsrc = "{{ detail_info.bigimg1 }}" ></li>
+				           		<li><img src="{{ detail_info.smallimg2 }}"  data-msrc= "{{ detail_info.middleimg2 }}"  data-bsrc = "{{ detail_info.bigimg2 }}" ></li>
+				           		<li><img src="{{ detail_info.smallimg3 }}"  data-msrc= "{{ detail_info.middleimg3 }}"  data-bsrc = "{{ detail_info.bigimg3 }}" ></li>
+				           		<li><img src="{{ detail_info.smallimg4 }}"  data-msrc= "{{ detail_info.middleimg4 }}"  data-bsrc = "{{ detail_info.bigimg4 }}" ></li>
 			               </ul>
 				        </div>
 		        	</div>
@@ -394,8 +398,8 @@
 		        	</div>
 			    </div>
 			    <!--商品图片及收藏分享 -->
-				<div class="ncs-handle"> 
-				    <a href="#">分享(0)</a> 
+				<div class="ncs-handle">
+				    <a href="#">分享(0)</a>
 				    <a href="#">收藏商品(0)</a>
 				    <a href="#"><i></i>加入对比</a>
 				    <a href="#">举 报</a>
@@ -518,7 +522,7 @@
 	                					</div>
 						            </div>
 				              	</div>
-					            <div style="line-height: 28px; color: #999999; float: left;"> 
+					            <div style="line-height: 28px; color: #999999; float: left;">
 					            	<strong style="font-size: 16px; color: red; margin: 0 8px;">有货 </strong><span>免运费</span>
 					            </div>
 							</dd>
@@ -529,12 +533,12 @@
 	      				<!--数量-->
 	        			<div class="ncs-figure-input">
 	          				<input value="1"  class="input-text" type="text">
-	          				<a href="#" class="increase">&nbsp;</a> 
-	          				<a href="#" class="decrease" >&nbsp;</a> 
+	          				<a href="#" class="increase">&nbsp;</a>
+	          				<a href="#" class="decrease" >&nbsp;</a>
 	        			</div>
 	    				<div class="ncs-point" style="display: none;">
 	    					<i></i>
-	          				<span>您选择的商品库存<strong id="repertory">479255</strong>件</span> 
+	          				<span>您选择的商品库存<strong id="repertory">479255</strong>件</span>
 	                   	</div>
 	        			<div class="ncs-btn">
 	          				<a href="#" class="addcart" title="加入购物车" id="detailsadd">
@@ -567,12 +571,12 @@
 							          	<div class="equal" title="持平----">4.7<i></i></div>
 							        </li>
 					            </ul>
-						    </div>    
+						    </div>
     						<div class="btns">
     							<a href="#" class="goto">进店逛逛</a>
     							<a href="#">收藏店铺<span>(<em>15</em>)</span></a>
     						</div>
-    
+
 						    <dl>
 						      	<dt>公司名称：</dt>
 						      	<dd>荆门众邦云商服务有限公司</dd>
@@ -590,7 +594,7 @@
 					<!--购物车-->
 					<div class="cart">
 						<a href="cart.html">
-							<span class="icon"></span> 
+							<span class="icon"></span>
 							<span class="name">购物车</span>
 							<i>3</i>
 						</a>
@@ -802,7 +806,7 @@
 	          			</div>
           				<p><a href="#" class="ncs-footer">查看本店其他商品</a></p>
 			   		</div>
-    			</div>	
+    			</div>
     		</div>
     		<!-------------------商品详情---------------->
     		<div class="ncs-goods-main">
@@ -830,7 +834,7 @@
 				              		</dd>
 				            	</dl>
 				          	</div>
-        				</div>  
+        				</div>
         				<div class="switch-bar"><a href="#">&nbsp;</a></div>
       				</div>
     			</div>
@@ -839,7 +843,7 @@
 	      			<div class="content bd">
 	                	<ul class="nc-goods-sort">
 				          	<li>商家货号：</li>
-				          	<li>品牌：农谷鲜</li>                            
+				          	<li>品牌：农谷鲜</li>
 	                	</ul>
 	                	<div class="ncs-goods-img-content">
                     		<img src="{{ detail_info.dtbgimg1 }}">
@@ -919,7 +923,7 @@
 				    <div class="ncs-goods-title-bar hd">
 				        <h4><a href="javascript:void(0);">购买咨询</a></h4>
 				    </div>
-			      	<div class="ncs-goods-info-content bd"> 
+			      	<div class="ncs-goods-info-content bd">
 				        <!-- 咨询留言内容部分 -->
 				        <div id="consulting_demo" class="ncs-loading"></div>
 			    	</div>
@@ -934,7 +938,7 @@
 						<ul class="clearfix">
 							<li>
 		                        <dl>
-		                            <dt>新手指南</dt>         
+		                            <dt>新手指南</dt>
 		                            <dd><a href="#">如何注册成为会员 </a></dd>
 									<dd><a href="#">手机/邮箱修改</a></dd>
 									<dd><a href="#">忘记密码/会员名</a></dd>
@@ -944,7 +948,7 @@
 		                   </li>
 		                   <li>
 		                        <dl>
-		                            <dt>购物指南</dt>         
+		                            <dt>购物指南</dt>
 		                            <dd><a href="#">购物流程 </a></dd>
 									<dd><a href="#">商品挑选/购买 </a></dd>
 									<dd><a href="#">订单查询</a></dd>
@@ -952,7 +956,7 @@
 		                   </li>
 		                   <li>
 		                        <dl>
-		                            <dt>物流配送</dt>         
+		                            <dt>物流配送</dt>
 		                            <dd><a href="#">常用快递</a></dd>
 									<dd><a href="#">修改收货地址</a></dd>
 									<dd><a href="#">货物签收 </a></dd>
@@ -961,14 +965,14 @@
 		                   </li>
 		                   <li>
 		                        <dl>
-		                            <dt>支付方式</dt>         
+		                            <dt>支付方式</dt>
 		                            <dd><a href="#">支付方式</a></dd>
 									<dd><a href="#">支付方式</a></dd>
 								</dl>
 		                   </li>
 		                   <li>
 		                        <dl>
-		                            <dt>新手指南</dt>         
+		                            <dt>新手指南</dt>
 		                            <dd><a href="#">售后服务</a></dd>
 									<dd><a href="#">退换货政策 </a></dd>
 									<dd><a href="#">退换货流程 </a></dd>
@@ -977,7 +981,7 @@
 		                   </li>
 		                   <li class="foot_bg1_noborder">
 		                        <dl>
-		                            <dt>商家服务</dt>         
+		                            <dt>商家服务</dt>
 		                            <dd><a href="#">关于汉购网</a></dd>
 									<dd><a href="#">招商政策</a></dd>
 									<dd><a href="#">收费标准 </a></dd>
@@ -996,7 +1000,7 @@
 						    <a href="#">商家入驻</a><span>|</span>
 							<a href="#">联系我们</a><span>|</span>
 							<a href="#">关于汉购网</a><span>|</span>
-							<a href="#">汉搜云</a><span>|</span>	
+							<a href="#">汉搜云</a><span>|</span>
 							<a href="#">友情链接</a>
 						</p>
 		                <p>

@@ -2,15 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fbd9273e-4e50-471d-8193-a2c62860fb49" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/114d3bdd-bf19-4171-8787-16a551ee20f5.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/114d3bdd-bf19-4171-8787-16a551ee20f5.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hangowang/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/hangowang/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hangowang/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/hangowang/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/hangowang/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/hangowang/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/json/productList-1.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/html/details.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/html/details.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/html/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/html/index.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -72,50 +67,65 @@
       <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/hangowang/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="96" column="54" selection-start-line="96" selection-start-column="54" selection-end-line="96" selection-end-column="54" />
+            <state relative-caret-position="54">
+              <caret line="104" column="11" lean-forward="true" selection-start-line="104" selection-start-column="11" selection-end-line="104" selection-end-column="11" />
               <folding>
                 <element signature="e#0#14#0" expanded="true" />
-                <element signature="e#241#1263#0" />
                 <element signature="e#1295#1924#0" />
-                <element signature="e#1959#2607#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="details.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/html/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="23" column="33" lean-forward="true" selection-start-line="23" selection-start-column="33" selection-end-line="23" selection-end-column="33" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="details.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/html/details.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="384" column="90" selection-start-line="384" selection-start-column="90" selection-end-line="384" selection-end-column="90" />
+            <state relative-caret-position="135">
+              <caret line="546" column="38" selection-start-line="546" selection-start-column="38" selection-end-line="546" selection-end-column="38" />
               <folding>
-                <element signature="n#div#0;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#div#1;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#nav#0;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#div#2;n#div#2;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#div#3;n#div#1;n#div#0;n#div#5;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#div#2;n#div#0;n#div#5;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#footer#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="e#19061#19067#0#HTML" expanded="true" />
+                <element signature="e#19067#19073#0#HTML" expanded="true" />
+                <element signature="e#19074#19080#0#HTML" expanded="true" />
+                <element signature="e#19080#19086#0#HTML" expanded="true" />
+                <element signature="e#19400#19406#0#HTML" expanded="true" />
+                <element signature="e#19406#19412#0#HTML" expanded="true" />
+                <element signature="e#19413#19419#0#HTML" expanded="true" />
+                <element signature="e#19419#19425#0#HTML" expanded="true" />
+                <element signature="e#20225#20231#0#HTML" expanded="true" />
+                <element signature="e#20231#20237#0#HTML" expanded="true" />
+                <element signature="e#20238#20244#0#HTML" expanded="true" />
+                <element signature="e#20244#20250#0#HTML" expanded="true" />
+                <element signature="n#style#0;n#div#2;n#div#0;n#div#1;n#div#0;n#dd#0;n#dl#0;n#div#2;n#div#2;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#3;n#div#0;n#div#1;n#div#0;n#dd#0;n#dl#0;n#div#2;n#div#2;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#1;n#dd#0;n#dl#0;n#div#2;n#div#2;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#strong#0;n#div#1;n#dd#0;n#dl#0;n#div#2;n#div#2;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="e#26285#26291#1#HTML" expanded="true" />
+                <element signature="e#26345#26351#1#HTML" expanded="true" />
+                <element signature="n#style#0;n#div#1;n#div#3;n#div#2;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#3;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#i#0;n#a#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#a#0;n#div#2;n#div#1;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#5;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="e#34230#34236#1#HTML" expanded="true" />
+                <element signature="n#style#0;n#i#0;n#dd#0;n#dl#0;n#div#1;n#div#0;n#div#1;n#div#2;n#div#1;n#div#5;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#i#0;n#dd#0;n#dl#1;n#div#1;n#div#0;n#div#1;n#div#2;n#div#1;n#div#5;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#i#0;n#dd#0;n#dl#2;n#div#1;n#div#0;n#div#1;n#div#2;n#div#1;n#div#5;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="e#37004#37010#0#HTML" expanded="true" />
+                <element signature="e#37010#37016#0#HTML" expanded="true" />
+                <element signature="e#37017#37023#0#HTML" expanded="true" />
+                <element signature="e#37023#37029#0#HTML" expanded="true" />
+                <element signature="e#40046#40052#0#HTML" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="daydown_detail" pinned="false" current-in-tab="true">
-        <entry file="das://114d3bdd-bf19-4171-8787-16a551ee20f5/schema/main/table/daydown_detail">
-          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-            <state>
-              <filtering enabled="true" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/hangowang/models.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="38" column="19" selection-start-line="38" selection-start-column="6" selection-end-line="38" selection-end-column="19" />
             </state>
           </provider>
         </entry>
@@ -280,9 +290,8 @@
       <window_info anchor="bottom" id="Run" order="8" show_stripe_button="false" weight="0.32874355" />
       <window_info anchor="bottom" id="Version Control" order="1" weight="0.32874355" />
       <window_info anchor="bottom" id="Python Console" order="3" weight="0.32874355" />
-      <window_info anchor="bottom" id="Terminal" order="4" sideWeight="0.49848944" weight="0.32943925" />
-      <window_info anchor="bottom" id="Database Console" order="14" weight="0.24226804" />
-      <window_info active="true" content_ui="combo" id="Project" order="2" visible="true" weight="0.16136363" />
+      <window_info anchor="bottom" id="Terminal" order="4" sideWeight="0.49848944" visible="true" weight="0.32943925" />
+      <window_info content_ui="combo" id="Project" order="2" visible="true" weight="0.16136363" />
       <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="5" weight="0.26969698" />
       <window_info anchor="bottom" id="Find" order="7" weight="0.32943925" />
@@ -297,6 +306,7 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="6" />
       <window_info anchor="bottom" id="Cvs" order="10" weight="0.25" />
+      <window_info anchor="bottom" id="Database Console" order="14" weight="0.24226804" />
       <window_info anchor="bottom" id="Concurrent Activities Diagram" order="13" show_stripe_button="false" weight="0.32874355" />
     </layout>
     <layout-to-restore>
@@ -537,60 +547,77 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/hangowang/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="96" column="54" selection-start-line="96" selection-start-column="54" selection-end-line="96" selection-end-column="54" />
-          <folding>
-            <element signature="e#0#14#0" expanded="true" />
-            <element signature="e#241#1263#0" />
-            <element signature="e#1295#1924#0" />
-            <element signature="e#1959#2607#0" />
-          </folding>
+    <entry file="das://114d3bdd-bf19-4171-8787-16a551ee20f5/schema/main/table/daydown_detail">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/hangowang/models.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
-          <caret line="38" column="19" selection-start-line="38" selection-start-column="6" selection-end-line="38" selection-end-column="19" />
+          <caret line="62" column="13" lean-forward="true" selection-start-line="62" selection-start-column="13" selection-end-line="62" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hangowang/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="104" column="11" lean-forward="true" selection-start-line="104" selection-start-column="11" selection-end-line="104" selection-end-column="11" />
+          <folding>
+            <element signature="e#0#14#0" expanded="true" />
+            <element signature="e#1295#1924#0" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/html/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="116">
-          <caret line="443" column="70" selection-start-line="443" selection-start-column="70" selection-end-line="443" selection-end-column="70" />
-          <folding>
-            <element signature="n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#1;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#nav#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#2;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#3;n#body#0;n#html#0;n#!!top" />
-          </folding>
+        <state relative-caret-position="120">
+          <caret line="23" column="33" lean-forward="true" selection-start-line="23" selection-start-column="33" selection-end-line="23" selection-end-column="33" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/html/details.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="384" column="90" selection-start-line="384" selection-start-column="90" selection-end-line="384" selection-end-column="90" />
+        <state relative-caret-position="135">
+          <caret line="546" column="38" selection-start-line="546" selection-start-column="38" selection-end-line="546" selection-end-column="38" />
           <folding>
-            <element signature="n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#1;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#nav#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#2;n#div#2;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#3;n#div#1;n#div#0;n#div#5;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#2;n#div#0;n#div#5;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#footer#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="e#19061#19067#0#HTML" expanded="true" />
+            <element signature="e#19067#19073#0#HTML" expanded="true" />
+            <element signature="e#19074#19080#0#HTML" expanded="true" />
+            <element signature="e#19080#19086#0#HTML" expanded="true" />
+            <element signature="e#19400#19406#0#HTML" expanded="true" />
+            <element signature="e#19406#19412#0#HTML" expanded="true" />
+            <element signature="e#19413#19419#0#HTML" expanded="true" />
+            <element signature="e#19419#19425#0#HTML" expanded="true" />
+            <element signature="e#20225#20231#0#HTML" expanded="true" />
+            <element signature="e#20231#20237#0#HTML" expanded="true" />
+            <element signature="e#20238#20244#0#HTML" expanded="true" />
+            <element signature="e#20244#20250#0#HTML" expanded="true" />
+            <element signature="n#style#0;n#div#2;n#div#0;n#div#1;n#div#0;n#dd#0;n#dl#0;n#div#2;n#div#2;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#3;n#div#0;n#div#1;n#div#0;n#dd#0;n#dl#0;n#div#2;n#div#2;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#dd#0;n#dl#0;n#div#2;n#div#2;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#strong#0;n#div#1;n#dd#0;n#dl#0;n#div#2;n#div#2;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#26285#26291#1#HTML" expanded="true" />
+            <element signature="e#26345#26351#1#HTML" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#3;n#div#2;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#3;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#i#0;n#a#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#div#2;n#div#1;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#5;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#34230#34236#1#HTML" expanded="true" />
+            <element signature="n#style#0;n#i#0;n#dd#0;n#dl#0;n#div#1;n#div#0;n#div#1;n#div#2;n#div#1;n#div#5;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#i#0;n#dd#0;n#dl#1;n#div#1;n#div#0;n#div#1;n#div#2;n#div#1;n#div#5;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#i#0;n#dd#0;n#dl#2;n#div#1;n#div#0;n#div#1;n#div#2;n#div#1;n#div#5;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#37004#37010#0#HTML" expanded="true" />
+            <element signature="e#37010#37016#0#HTML" expanded="true" />
+            <element signature="e#37017#37023#0#HTML" expanded="true" />
+            <element signature="e#37023#37029#0#HTML" expanded="true" />
+            <element signature="e#40046#40052#0#HTML" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://114d3bdd-bf19-4171-8787-16a551ee20f5/schema/main/table/daydown_detail">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
         </state>
       </provider>
     </entry>
