@@ -2,10 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fbd9273e-4e50-471d-8193-a2c62860fb49" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/114d3bdd-bf19-4171-8787-16a551ee20f5.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/114d3bdd-bf19-4171-8787-16a551ee20f5.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hangowang/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/hangowang/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hangowang/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/hangowang/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/hangowang/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/hangowang/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/details.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/details.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/json/productList-4.json" beforeDir="false" afterPath="$PROJECT_DIR$/static/json/productList-4.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/html/details.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/html/details.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/html/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/html/index.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -63,69 +71,48 @@
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="details.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/html/details.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="6956">
+              <caret line="542" column="100" selection-start-line="542" selection-start-column="100" selection-end-line="542" selection-end-column="100" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="details.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/static/js/details.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="309">
+              <caret line="154" column="22" selection-start-line="154" selection-start-column="22" selection-end-line="154" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/hangowang/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="54">
-              <caret line="104" column="11" lean-forward="true" selection-start-line="104" selection-start-column="11" selection-end-line="104" selection-end-column="11" />
-              <folding>
-                <element signature="e#0#14#0" expanded="true" />
-                <element signature="e#1295#1924#0" />
-              </folding>
+            <state relative-caret-position="324">
+              <caret line="133" column="21" lean-forward="true" selection-start-line="133" selection-start-column="21" selection-end-line="133" selection-end-column="21" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/html/index.html">
+      <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/hangowang/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="23" column="33" lean-forward="true" selection-start-line="23" selection-start-column="33" selection-end-line="23" selection-end-column="33" />
+            <state relative-caret-position="180">
+              <caret line="14" column="1" lean-forward="true" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="details.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/templates/html/details.html">
+      <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/hangowang/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="546" column="38" selection-start-line="546" selection-start-column="38" selection-end-line="546" selection-end-column="38" />
-              <folding>
-                <element signature="e#19061#19067#0#HTML" expanded="true" />
-                <element signature="e#19067#19073#0#HTML" expanded="true" />
-                <element signature="e#19074#19080#0#HTML" expanded="true" />
-                <element signature="e#19080#19086#0#HTML" expanded="true" />
-                <element signature="e#19400#19406#0#HTML" expanded="true" />
-                <element signature="e#19406#19412#0#HTML" expanded="true" />
-                <element signature="e#19413#19419#0#HTML" expanded="true" />
-                <element signature="e#19419#19425#0#HTML" expanded="true" />
-                <element signature="e#20225#20231#0#HTML" expanded="true" />
-                <element signature="e#20231#20237#0#HTML" expanded="true" />
-                <element signature="e#20238#20244#0#HTML" expanded="true" />
-                <element signature="e#20244#20250#0#HTML" expanded="true" />
-                <element signature="n#style#0;n#div#2;n#div#0;n#div#1;n#div#0;n#dd#0;n#dl#0;n#div#2;n#div#2;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#3;n#div#0;n#div#1;n#div#0;n#dd#0;n#dl#0;n#div#2;n#div#2;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#1;n#dd#0;n#dl#0;n#div#2;n#div#2;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#strong#0;n#div#1;n#dd#0;n#dl#0;n#div#2;n#div#2;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="e#26285#26291#1#HTML" expanded="true" />
-                <element signature="e#26345#26351#1#HTML" expanded="true" />
-                <element signature="n#style#0;n#div#1;n#div#3;n#div#2;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#3;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#i#0;n#a#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#a#0;n#div#2;n#div#1;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#5;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="e#34230#34236#1#HTML" expanded="true" />
-                <element signature="n#style#0;n#i#0;n#dd#0;n#dl#0;n#div#1;n#div#0;n#div#1;n#div#2;n#div#1;n#div#5;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#i#0;n#dd#0;n#dl#1;n#div#1;n#div#0;n#div#1;n#div#2;n#div#1;n#div#5;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#i#0;n#dd#0;n#dl#2;n#div#1;n#div#0;n#div#1;n#div#2;n#div#1;n#div#5;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="e#37004#37010#0#HTML" expanded="true" />
-                <element signature="e#37010#37016#0#HTML" expanded="true" />
-                <element signature="e#37017#37023#0#HTML" expanded="true" />
-                <element signature="e#37023#37029#0#HTML" expanded="true" />
-                <element signature="e#40046#40052#0#HTML" expanded="true" />
-              </folding>
+            <state relative-caret-position="-620">
+              <caret line="33" column="41" lean-forward="true" selection-start-line="33" selection-start-column="41" selection-end-line="33" selection-end-column="41" />
             </state>
           </provider>
         </entry>
@@ -159,14 +146,16 @@
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/114d3bdd-bf19-4171-8787-16a551ee20f5/console.sql" />
         <option value="$PROJECT_DIR$/templates/html/login.html" />
         <option value="$PROJECT_DIR$/templates/html/register.html" />
-        <option value="$PROJECT_DIR$/static/js/index.js" />
         <option value="$PROJECT_DIR$/static/css/index.css" />
         <option value="$PROJECT_DIR$/static/json/productList-1.json" />
-        <option value="$PROJECT_DIR$/hangowang/urls.py" />
+        <option value="$PROJECT_DIR$/static/json/productList-4.json" />
         <option value="$PROJECT_DIR$/templates/html/index.html" />
         <option value="$PROJECT_DIR$/hangowang/models.py" />
+        <option value="$PROJECT_DIR$/hangowang/urls.py" />
         <option value="$PROJECT_DIR$/hangowang/views.py" />
         <option value="$PROJECT_DIR$/templates/html/details.html" />
+        <option value="$PROJECT_DIR$/static/js/index.js" />
+        <option value="$PROJECT_DIR$/static/js/details.js" />
       </list>
     </option>
   </component>
@@ -180,9 +169,10 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="y" value="23" />
-    <option name="width" value="1440" />
-    <option name="height" value="877" />
+    <option name="x" value="3" />
+    <option name="y" value="24" />
+    <option name="width" value="1366" />
+    <option name="height" value="681" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -200,12 +190,23 @@
             <path>
               <item name="python1809" type="b2602c69:ProjectViewProjectNode" />
               <item name="python1809" type="462c0819:PsiDirectoryNode" />
+              <item name="Django_test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="python1809" type="b2602c69:ProjectViewProjectNode" />
+              <item name="python1809" type="462c0819:PsiDirectoryNode" />
               <item name="hangowang" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="python1809" type="b2602c69:ProjectViewProjectNode" />
               <item name="python1809" type="462c0819:PsiDirectoryNode" />
               <item name="static" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="python1809" type="b2602c69:ProjectViewProjectNode" />
+              <item name="python1809" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="python1809" type="b2602c69:ProjectViewProjectNode" />
@@ -229,7 +230,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="database.console.LAST_STATE" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Python1809AXF/Python1809AXF" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="restartRequiresConfirmation" value="false" />
@@ -240,6 +241,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/static/json" />
       <recent name="$PROJECT_DIR$/templates" />
       <recent name="$PROJECT_DIR$/templates/html" />
       <recent name="$PROJECT_DIR$/static/css" />
@@ -281,7 +283,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="-4" width="1362" height="556" extended-state="6" />
+    <frame x="0" y="-4" width="1366" height="709" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="12" weight="0.32874355" />
@@ -290,11 +292,10 @@
       <window_info anchor="bottom" id="Run" order="8" show_stripe_button="false" weight="0.32874355" />
       <window_info anchor="bottom" id="Version Control" order="1" weight="0.32874355" />
       <window_info anchor="bottom" id="Python Console" order="3" weight="0.32874355" />
-      <window_info anchor="bottom" id="Terminal" order="4" sideWeight="0.49848944" visible="true" weight="0.32943925" />
-      <window_info content_ui="combo" id="Project" order="2" visible="true" weight="0.16136363" />
+      <window_info anchor="bottom" id="Terminal" order="4" sideWeight="0.49848944" visible="true" weight="0.11876076" />
+      <window_info active="true" content_ui="combo" id="Project" order="2" visible="true" weight="0.21676737" />
       <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
-      <window_info anchor="right" id="Database" order="5" weight="0.26969698" />
-      <window_info anchor="bottom" id="Find" order="7" weight="0.32943925" />
+      <window_info anchor="right" id="Database" order="5" weight="0.26963747" />
       <window_info anchor="right" id="SciView" order="4" weight="0.32930514" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Debug" order="9" show_stripe_button="false" weight="0.39931154" />
@@ -307,33 +308,34 @@
       <window_info anchor="bottom" id="Message" order="6" />
       <window_info anchor="bottom" id="Cvs" order="10" weight="0.25" />
       <window_info anchor="bottom" id="Database Console" order="14" weight="0.24226804" />
+      <window_info anchor="bottom" id="Find" order="7" weight="0.32943925" />
       <window_info anchor="bottom" id="Concurrent Activities Diagram" order="13" show_stripe_button="false" weight="0.32874355" />
     </layout>
     <layout-to-restore>
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.25" />
+      <window_info anchor="bottom" id="Version Control" order="1" weight="0.32874355" />
       <window_info anchor="bottom" id="Database Console" order="14" weight="0.24226804" />
       <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
       <window_info anchor="bottom" id="Run" order="8" show_stripe_button="false" weight="0.32874355" />
-      <window_info content_ui="combo" id="Project" order="2" visible="true" weight="0.28323263" />
+      <window_info id="Favorites" order="0" side_tool="true" />
+      <window_info active="true" content_ui="combo" id="Project" order="2" visible="true" weight="0.11178248" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="Database Changes" order="2" weight="0.32943925" />
       <window_info anchor="bottom" id="TODO" order="12" weight="0.32874355" />
-      <window_info anchor="bottom" id="Version Control" order="1" weight="0.32874355" />
-      <window_info anchor="bottom" id="Python Console" order="3" weight="0.32874355" />
       <window_info anchor="bottom" id="Inspection" order="11" weight="0.4" />
-      <window_info anchor="bottom" id="Find" order="7" />
-      <window_info active="true" anchor="right" id="Database" order="5" visible="true" weight="0.27190334" />
-      <window_info anchor="right" id="Coverage" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Find" order="7" weight="0.32943925" />
       <window_info anchor="bottom" id="Debug" order="9" show_stripe_button="false" weight="0.39931154" />
-      <window_info anchor="bottom" id="Database Changes" order="2" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Cvs" order="10" weight="0.25" />
+      <window_info anchor="bottom" id="Terminal" order="4" sideWeight="0.49848944" visible="true" weight="0.36166364" />
       <window_info anchor="bottom" id="Event Log" order="5" sideWeight="0.50151056" side_tool="true" weight="0.27366608" />
+      <window_info anchor="bottom" id="Concurrent Activities Diagram" order="13" show_stripe_button="false" weight="0.32874355" />
+      <window_info anchor="bottom" id="Cvs" order="10" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.25" />
       <window_info anchor="right" id="SciView" order="4" weight="0.32930514" />
       <window_info anchor="bottom" id="Message" order="6" />
-      <window_info anchor="bottom" id="Terminal" order="4" sideWeight="0.49848944" visible="true" weight="0.28055078" />
-      <window_info anchor="bottom" id="Concurrent Activities Diagram" order="13" show_stripe_button="false" weight="0.32874355" />
-      <window_info id="Favorites" order="0" side_tool="true" />
+      <window_info anchor="right" id="Database" order="5" weight="0.26963747" />
+      <window_info anchor="right" id="Coverage" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Python Console" order="3" weight="0.32874355" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -368,44 +370,12 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/static/css/index.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="160" column="16" selection-start-line="160" selection-start-column="16" selection-end-line="160" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/images/debg41-6.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/images/web-101-101-1.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/images/web-4-48-2.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/images/web-5-51.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/images/web-1-11.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/images/web-1-18-1.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/images/web-1-18-2.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/images/web-2-21.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/images/web-2-28-1.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/images/web-2-28-2.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/static/images/web-3-31.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -463,13 +433,6 @@
     <entry file="file://$PROJECT_DIR$/static/images/lweb4-6.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="das://114d3bdd-bf19-4171-8787-16a551ee20f5/schema/main/table/goodlists">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/static/js/register-1.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1395" />
@@ -478,33 +441,9 @@
     <entry file="file://$PROJECT_DIR$/static/js/login.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="das://114d3bdd-bf19-4171-8787-16a551ee20f5/schema/main/table/daydown">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/json/productList-2.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/json/productList-4.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="24" column="26" selection-start-line="24" selection-start-column="26" selection-end-line="24" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/static/js/cart.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1350" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/js/details.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="14" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="14" />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/static/json/lunbotu.json">
@@ -537,13 +476,48 @@
     <entry file="file://$PROJECT_DIR$/static/images/cloudzoom1-1-2.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/json/productList-1.json">
+    <entry file="file://$PROJECT_DIR$/static/json/productList-1.json" />
+    <entry file="file://$PROJECT_DIR$/static/json/productList-2.json">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/hangowang/urls.py">
+    <entry file="file://$PROJECT_DIR$/static/images/cloudzoom41-1-1.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/images/cloudzoom42-3-3.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/images/cloudzoom42-4-3.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/images/cloudzoom41-3-2.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/images/cloudzoom41-3-1.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/images/cloudzoom41-2-2.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/images/cloudzoom41-2-1.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/images/cloudzoom41-4-1.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="das://114d3bdd-bf19-4171-8787-16a551ee20f5/schema/main/table/daydown">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/images/cloudzoom41-3-3.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/json/productList-4.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="8" column="23" lean-forward="true" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
+        <state relative-caret-position="378">
+          <caret line="136" column="22" lean-forward="true" selection-start-line="136" selection-start-column="17" selection-end-line="136" selection-end-column="22" />
         </state>
       </provider>
     </entry>
@@ -554,70 +528,69 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/hangowang/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="62" column="13" lean-forward="true" selection-start-line="62" selection-start-column="13" selection-end-line="62" selection-end-column="13" />
+    <entry file="das://114d3bdd-bf19-4171-8787-16a551ee20f5/schema/main/table/goods_detail">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/hangowang/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="104" column="11" lean-forward="true" selection-start-line="104" selection-start-column="11" selection-end-line="104" selection-end-column="11" />
-          <folding>
-            <element signature="e#0#14#0" expanded="true" />
-            <element signature="e#1295#1924#0" />
-          </folding>
+    <entry file="das://114d3bdd-bf19-4171-8787-16a551ee20f5/schema/main/table/goodlists">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/html/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="23" column="33" lean-forward="true" selection-start-line="23" selection-start-column="33" selection-end-line="23" selection-end-column="33" />
+        <state relative-caret-position="-1245">
+          <caret line="439" selection-start-line="439" selection-end-line="439" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hangowang/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="133" column="21" lean-forward="true" selection-start-line="133" selection-start-column="21" selection-end-line="133" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hangowang/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="14" column="1" lean-forward="true" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hangowang/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-620">
+          <caret line="33" column="41" lean-forward="true" selection-start-line="33" selection-start-column="41" selection-end-line="33" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/js/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2079">
+          <caret line="245" column="4" lean-forward="true" selection-start-line="245" selection-start-column="4" selection-end-line="245" selection-end-column="4" />
+          <folding>
+            <element signature="e#3337#3544#0" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/html/details.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="546" column="38" selection-start-line="546" selection-start-column="38" selection-end-line="546" selection-end-column="38" />
-          <folding>
-            <element signature="e#19061#19067#0#HTML" expanded="true" />
-            <element signature="e#19067#19073#0#HTML" expanded="true" />
-            <element signature="e#19074#19080#0#HTML" expanded="true" />
-            <element signature="e#19080#19086#0#HTML" expanded="true" />
-            <element signature="e#19400#19406#0#HTML" expanded="true" />
-            <element signature="e#19406#19412#0#HTML" expanded="true" />
-            <element signature="e#19413#19419#0#HTML" expanded="true" />
-            <element signature="e#19419#19425#0#HTML" expanded="true" />
-            <element signature="e#20225#20231#0#HTML" expanded="true" />
-            <element signature="e#20231#20237#0#HTML" expanded="true" />
-            <element signature="e#20238#20244#0#HTML" expanded="true" />
-            <element signature="e#20244#20250#0#HTML" expanded="true" />
-            <element signature="n#style#0;n#div#2;n#div#0;n#div#1;n#div#0;n#dd#0;n#dl#0;n#div#2;n#div#2;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#3;n#div#0;n#div#1;n#div#0;n#dd#0;n#dl#0;n#div#2;n#div#2;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#dd#0;n#dl#0;n#div#2;n#div#2;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#strong#0;n#div#1;n#dd#0;n#dl#0;n#div#2;n#div#2;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="e#26285#26291#1#HTML" expanded="true" />
-            <element signature="e#26345#26351#1#HTML" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#3;n#div#2;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#3;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#i#0;n#a#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#0;n#div#2;n#div#1;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#5;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="e#34230#34236#1#HTML" expanded="true" />
-            <element signature="n#style#0;n#i#0;n#dd#0;n#dl#0;n#div#1;n#div#0;n#div#1;n#div#2;n#div#1;n#div#5;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#i#0;n#dd#0;n#dl#1;n#div#1;n#div#0;n#div#1;n#div#2;n#div#1;n#div#5;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#i#0;n#dd#0;n#dl#2;n#div#1;n#div#0;n#div#1;n#div#2;n#div#1;n#div#5;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="e#37004#37010#0#HTML" expanded="true" />
-            <element signature="e#37010#37016#0#HTML" expanded="true" />
-            <element signature="e#37017#37023#0#HTML" expanded="true" />
-            <element signature="e#37023#37029#0#HTML" expanded="true" />
-            <element signature="e#40046#40052#0#HTML" expanded="true" />
-          </folding>
+        <state relative-caret-position="6956">
+          <caret line="542" column="100" selection-start-line="542" selection-start-column="100" selection-end-line="542" selection-end-column="100" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/js/details.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="309">
+          <caret line="154" column="22" selection-start-line="154" selection-start-column="22" selection-end-line="154" selection-end-column="22" />
         </state>
       </provider>
     </entry>

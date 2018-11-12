@@ -494,7 +494,7 @@
     				<div class="home-standard-layout clearfix">
     					<!--标题-->
 					  	<div class="title">
-							<a class="wwisp" href="#"> 
+							<a class="wwisp" href="#">
 								<img src="{% static 'images/web-4-41.png' %}" style="display: inline;">
 							</a>
                             &nbsp;&nbsp;&nbsp;
@@ -505,7 +505,7 @@
 					  		<!--左侧-->
 						  	<div class="right-side-focus clearfix" id="right-side">
 						        <!--<a href="#"><img src="../images/web-4-48-1.jpg"></a>-->
-                                <a href="#">
+                                <a href="{% url 'hangowang:details_goods' right_side.id %}">
                                     <img src="{{ right_side.img }}" alt="">
                                 </a>
 						    </div>
@@ -516,7 +516,7 @@
                                         <li>
                                             <dl>
                                                 <dd class="goods-thumb">
-                                                    <a href="#"><img src="{{ item4.img }}" alt=""></a>
+                                                    <a href="{% url 'hangowang:details_goods' item4.id %}"><img src="{{ item4.img }}" alt=""></a>
                                                 </dd>
                                                 <dt class="goods-name">
                                                     <a href="#">{{ item4.goodsname }}</a>
@@ -530,7 +530,7 @@
                                     {% endfor %}
                                     <div class="medium-pic">
                                         {% for item6 in center_side %}
-                                            <a href="#">
+                                            <a href="{% url 'hangowang:details_goods' item6.id %}">
                                                 <img src="{{ item6.img }}" alt="">
                                             </a>
                                         {% endfor %}
@@ -539,7 +539,7 @@
                                         <li>
                                             <dl>
                                                 <dd class="goods-thumb">
-                                                    <a href="#"><img src="{{ item5.img }}" alt=""></a>
+                                                    <a href="{% url 'hangowang:details_goods' item5.id %}"><img src="{{ item5.img }}" alt=""></a>
                                                 </dd>
                                                 <dt class="goods-name">
                                                     <a href="#">{{ item5.goodsname }}</a>

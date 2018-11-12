@@ -1,4 +1,4 @@
-//轮播图
+// 轮播图
 	$(function(){
 		var arr = [];
 		$.get("static/json/lunbotu.json", function(data){
@@ -19,17 +19,17 @@
 			var _li2 = $("#full-screen-slides-pagination li");
 			//初始化显示第一张图
 			_li1.eq(0).show().siblings().hide();
-			
+
 			//图片总数量
 			var size = $(".full-screen-slides li").size(); //4
-			
+
 			//自动轮播
 			var i = 0; //记录图片下标
 			var timer = setInterval(function(){
 				i++;
-				move(); 
+				move();
 			}, 2000);
-			
+
 			//li2上面的按钮
 			_li2.hover(function(){
 				var index = $(this).index();
@@ -37,10 +37,10 @@
 				i = index;
 				move();
 			})
-			
+
 			//移动的函数
 			function move(){
-				
+
 				//如果i超出了图片总数量
 				if(i<0){
 					i=size-1;
@@ -48,13 +48,13 @@
 				if (i == size) {
 					i = 0; //即将移动到2张图
 				}
-				
+
 				//透明度切换到第i张图
 				_li1.eq(i).stop().fadeIn().siblings().stop().fadeOut();
-				
+
 				//改变ul2的按钮状态
-				_li2.eq(i).removeClass().addClass("full-screen-active").siblings().removeClass("full-screen-active"); 
-				
+				_li2.eq(i).removeClass().addClass("full-screen-active").siblings().removeClass("full-screen-active");
+
 			}
 			//上一页
 			$(".prev-page").click(function(){
@@ -72,7 +72,7 @@
 				$(".next-page").fadeIn();
 				//移入, 关闭定时器
 				clearInterval(timer);
-			}, 
+			},
 			function(){
 				//移出, 重新开启定时器
 				$(".prev-page").fadeOut();
@@ -87,7 +87,7 @@
     
     
 
-/////////////////////////////////商品列表//////////////
+///////////////////////////////商品列表//////////////
 	$(function(){
 		//全局变量， 用来保存获取到json中的所有商品数据
 		var arr = [];
@@ -126,8 +126,8 @@
 		})
 
 	})
-	//////////////////////////////////////////////////////////
-//---------------------今日优惠
+	////////////////////////////////////////////////////////
+// ---------------------今日优惠
 	$(function(){
 		var arr = [];
 		$.get("static/json/productList-2.json", function(data){
@@ -182,14 +182,14 @@
 		    	"</div>" ).insertBefore("#productList4 li:nth-child(3)");
 		})
 //-----------点击进入详情页
-		$(".middle-goods-list").on("click", "img", function(){
-			//console.log("click");
-			var index = $(this).index(".middle-goods-list img");
-			var obj = arr[index];
-			//console.log(obj.id);
-			//进入详情页， 且将当前点击的商品的id传入
-			location.href = "details.html?id=" + obj.id;
-		})
+// 		$(".middle-goods-list").on("click", "img", function(){
+// 			//console.log("click");
+// 			var index = $(this).index(".middle-goods-list img");
+// 			var obj = arr[index];
+// 			//console.log(obj.id);
+// 			//进入详情页， 且将当前点击的商品的id传入
+// 			location.href = "details.html?id=" + obj.id;
+// 		})
 		
 //------------------------点击加入购物车
 		
@@ -258,28 +258,4 @@
 			$.cookie("cart", JSON.stringify(arr2), {expires:30, path:"/"});
 			console.log( $.cookie("cart") );
 		})
-	})
-
-//返回顶部
-	$(function() {
-		$("#gotop").hide();
-        //当滚动条的位置处于距顶部100像素以下时，跳转链接出现，否则消失
-        $(function() {
-            $(window).scroll(function() {
-                if ($(window).scrollTop() > 100) {
-                    $("#gotop").fadeIn(1000);
-                } else {
-                    $("#gotop").fadeOut(1000);
-                }
-            });
-            //当点击跳转链接后，回到页面顶部位置
-            $("#gotop").click(function() {
-                $('body,html').animate({
-                    scrollTop: 0
-                },
-                1000);
-                return false;
-            });
-        });
-
 	})

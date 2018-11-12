@@ -72,7 +72,6 @@
 					</dl>
 				</div>
 			</div>
-		</div>
 
 		<!-- PublicHeadLayout Begin -->
 		<!--头部-->
@@ -541,7 +540,7 @@
 	          				<span>您选择的商品库存<strong id="repertory">479255</strong>件</span>
 	                   	</div>
 	        			<div class="ncs-btn">
-	          				<a href="#" class="addcart" title="加入购物车" id="detailsadd">
+	          				<a href="#" class="addcart" title="加入购物车" detail_info="{{ detail_info }}">
 	          					<i></i>加入购物车
 	          				</a>
 	          				<a href="#" class="buynow" title="立即购买">立即购买</a>
@@ -593,7 +592,7 @@
 				<div class="ever">
 					<!--购物车-->
 					<div class="cart">
-						<a href="cart.html">
+						<a href="{% url 'hangowang:cart' %}">
 							<span class="icon"></span>
 							<span class="name">购物车</span>
 							<i>3</i>

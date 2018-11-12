@@ -1,7 +1,7 @@
 import hashlib
 import uuid
 
-from django.http import HttpResponse
+from django.http import HttpResponse, JsonResponse
 from django.shortcuts import render, redirect
 
 # Create your views here.
@@ -109,3 +109,29 @@ def details(request, detail):
 # 购物车
 def cart(request):
     return render(request,'html/cart.html')
+
+
+def details_goods(request,detail):
+    try:
+        token = request.COOKIES.get('token')
+        user = User.objects.get(token=token)
+        GoodsDetail = Goodlists.objects.get(pk=detail)
+        detail_info = GoodsDetail.goodsdetail
+        responseData = {
+            'token': token,
+            'user': user,
+            'detail_info': detail_info,
+        }
+        return render(request, 'html/details.html', context=responseData)
+    except:
+        GoodsDetail = Goodlists.objects.get(pk=detail)
+        detail_info = GoodsDetail.goodsdetail
+        return render(request, 'html/details.html', context={'detail_info':detail_info})
+
+
+def addcart(request,detailid):
+    responseData = {
+            'msg': 1,
+            'status': 1,
+        }
+    return JsonResponse(responseData)
